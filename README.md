@@ -1,2 +1,3 @@
 # jetson-track
-tracking camera scripts with pixel-frame output
+usage of TrackingCamera class, prints motion data in terminal.
+Ubuntu jetson

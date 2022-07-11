@@ -7,20 +7,20 @@ def run_camera():
     """When terminal displays any error or warning, restart jetson manually"""
     # TrackingCamera configurations
     camera_kwargs = {
-        'input_source': 0,                    # camera id, set this to 0 if you want to read live camera data
-                                              # or to input_file if you want to read data from a saved mp4 file 
-        'mode': 'motion',                     # optional, the camera mode [recording, tracking (default), motion, calibration]
-        'output_video': 'lab6_output.mp4',      # optional, save the output video file (`mp4` format only)
-        'output_data': 'lab6_output.csv',       # optional, save the tracking data (to `.csv` files)
-        'camera_settings': (1920, 1080, 30),  # optional (width, height, fps), (1920, 1080, 30) by default
-        'tracking_config_file': 'stickers',   # optional, markers for tracking or motion
-                                              #           '<name>' for builtin config or '<name>.config' for local file
-        'marker_names': [],                   # optional, selected markers in tracking config (empty for all)
-        'crop': True,                         # optional, if True (default) frame is cropped to near square, otherwise the full resolution is used
-                                              #           always False for video file input
-        'builtin_plot_mode': 'default',       # optional, 'none' for no plotting by lib
-                                              #           'default' for plotting center, contour, etc, may add 'trace' for future
-        'camera_distance': 45                # optional, camera distance (in cm) to object
+        'input_source': 0,                    
+                                              
+        'mode': 'motion',                     
+        'output_video': 'data_video.mp4',     
+        'output_data': 'data_output.csv',       
+        'camera_settings': (1920, 1080, 30),  
+        'tracking_config_file': 'stickers',   
+                                              
+        'marker_names': [],                   
+        'crop': True,                         
+                                              
+        'builtin_plot_mode': 'default',       
+                                             
+        'camera_distance': 45                
 
     }
 
